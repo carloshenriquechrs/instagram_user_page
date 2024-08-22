@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+}
+
+body{
+    background-color:rgb(245,245,245);
+}
+
+header{
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+}
+
+header .container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 18px 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+header .logo_icon{
+    padding: 5px 10px 0 0px;
+}
+
+header .logo_divisor{
+    height: 25px;
+    border: 1px solid black;
+}
+
+header .logo_icon i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+header .logo_text{
+    padding: 10px 0px 0px 10px;
+    /* border: 1px solid red; */
+    max-width: 100px;
+}
+
+.logo_text img{
+    cursor: pointer;
+    width: 100%;
+}
+
+header .search_header{
+    position: relative;
+}
+
+header .search_header input{
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+.search_header input::placeholder{
+    text-align: center;
+    color:#ccc;
+}
+
+header .search_header i{
+    position: absolute;
+    left: 45px;
+    top: 9px;
+    font-size: 14px;
+    color: #a8a8a8;
+}
+
+header .icons_header{
+    display: flex;
+    align-items: center;
+}
+
+.icons_header .icon_compass i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.icons_header .icon_hearth i{
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.icons_header .icon_perfil{
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 20px;
+    background-image: url(../images/MillesFilme.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Main  */
+
+/* Section 01 - Perfil */
+
+main .perfil_section{
+    margin-top: 50px;
+    /* border: 1px solid red; */
+}
+
+.perfil_section .container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+.perfil_section .perfil_image{
+    width: 20%;
+}
+
+.perfil_image .perfil_border{
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    border: 1px solid #a8a8a8;
+    position: relative;
+}
+
+.perfil_image .perfil_image_wrraper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-image: url(../images/MillesFilme.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+.perfil_section .perfil_content{
+    width: 80%;
+    margin-top: 10px;
+    /* border: 1px solid blue;  */
+}
+
+.perfil_content .perfil_content_container{
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* border: 1px solid deepskyblue; */
+}
+
+/* Perfil Content */
+
+.perfil_content .content_title{
+    display: flex;
+    align-items: center;
+}
+
+.perfil_content .content_title h1{
+    font-weight: normal;
+}
+
+.perfil_content .title_button{
+    margin: 0 20px;
+}
+
+.perfil_content .title_button button{
+    padding: 3px 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.perfil_content .content_infos{
+    display: flex;
+    margin: 10px 0;
+}
+
+.perfil_content .title_icon i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.content_infos .infos_single h2 span{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content_infos .infos_single h2{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.content_infos .infos_single:nth-of-type(2){
+    margin: 0 20px;
+}
+
+.perfil_content .content_description h2{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.perfil_content .content_description p{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+.perfil_content .content_description p span{
+    font-size: 18px;
+}
+
+.perfil_content .content_description a{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(70, 70, 255);
+}
+
+/* Section 01 - Perfil Mobile */
+
+main .perfil_section_mobile{
+    display: none;
+}
+
+.perfil_section_mobile .container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2%;
+    margin-top: 30px;
+}
+
+.perfil_section_mobile .perfil_mobile_configs{
+    display: flex;
+    align-items: center;
+}
+
+.perfil_mobile_configs .perfil_icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.perfil_mobile_configs .perfil_button button{
+    padding: 5px 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.perfil_section_mobile .perfil_mobile_image{
+    display: flex;
+    align-items: center;
+}
+
+.perfil_section_mobile .perfil_mobile_name_config{
+    margin-left: 20px;
+}
+
+.perfil_mobile_name_config .perfil_name h1{
+    font-weight: normal;
+}
+
+.perfil_mobile_image .perfil_image{
+    width: 25%;
+}
+
+.content_description_mobile{
+    padding: 10px;
+}
+
+.content_description_mobile p{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+.content_description_mobile p span{
+    font-size: 18px;
+}
+
+/* Section 02 - Biografia */
+
+main .biografia_section{
+    margin: 30px 0px 50px 0px;
+}
+
+.biografia_section .container{
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.biografia_section .swiper{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.swiper .swiper-slide{
+    cursor: pointer;
+}
+
+.biografia_section .arrow{
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.biografia_section .bio_single{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.biografia_section .bio_icon{
+    margin: 10px auto;
+    width: 100%;
+    max-width: 90px;
+    height: 90px;
+    background-color: red;
+    border-radius: 50%;
+    border: 5px solid white;
+    font-size: 25px;
+    outline: 1px solid #a8a8a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio_single p{
+    margin-left: 3px;
+}
+
+.biografia_section .bio_text p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.biografia_section .next{
+    right: 0px;
+    /* border: 1px solid red; */
+}
+
+.biografia_section .prev{
+    /* border: 1px solid red; */
+    left: 0px;
+}
+
+/* Contents Infos Mobile */
+
+main .content_info_mobile{
+    display: none;
+}
+
+.content_info_mobile .container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 12px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ccc;
+
+}
+
+.content_info_mobile .content_info_container{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.content_info_container .content_info_single{
+    text-align: center;
+    width: 33.3%;
+}
+
+.content_info_container .content_info_single h2{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.content_info_container .content_info_single p{
+    color: #8f8f8f;
+    font-size: 14px;
+}
+
+/* Section 03 - Secão de Navegação */
+
+.nav_section .container{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+    align-items: center;
+}
+
+.nav_section .nav_content{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.nav_single{
+    cursor: pointer;
+    padding: 0px 0px 20px 0px;
+}
+
+.nav_single .nav_single_line{
+    width: 100%;
+    background-color: black;
+    height: 2px;
+    display: none;
+}
+
+.select .nav_single_line{
+    display: block;
+}
+
+.nav_single .nav_single_text{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_single .nav_single_text h2{
+    color: #8f8f8f;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav_single .nav_single_text i{
+    margin-right: 5px;
+    font-size: 16px;
+    color: #8f8f8f;
+}
+
+.select .nav_single_text h2{
+    color: black;
+    font-weight: 600;
+}
+
+.select .nav_single_text i{
+    color: black;
+}
+
+/* Section 04 - Publicações */
+
+main .publicacoes_section{
+    /* display: none; */
+}
+
+.publicacoes_section .container{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.publicacoes_section .publicacoes_single{
+    width: 33.3%;
+    padding-top: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    border: 3px solid white;
+}
+
+.publicacoes_single .over_lay{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.over_lay .over_icons{
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.over_icons .over_icons_single{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0 10px;
+}
+
+.over_icons .over_icons_single i{
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.over_icons .over_icons_single:last-child i{
+    font-size: 22px;
+}
+
+.publicacoes_single:hover .over_lay{
+    display: block;
+}
+
+/* Section 05 - Salvos */
+
+main .salvos_section{
+    display: none;
+}
+
+.salvos_section .container{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.salvos_section .salvos_single{
+    width: 33.3%;
+    padding-top: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+/* Section 06 - Marcados  */
+
+main .marcados_section{
+    display: none;
+}
+
+.marcados_section .container{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.marcados_section .marcados_single{
+    width: 33.3%;
+    padding-top: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+/* Footer */
+
+footer .container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0px 2%;
+}
+
+footer .footer_top{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer .footer_bot{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer_top a, .footer_bot a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #8f8f8f;
+    margin-right: 10px;
+    line-height: 30px;
+}
+
+.footer_top a:hover, .footer_bot a:hover{
+    color: black;
+}
+
+/* Responsivo */
+
+/* Header */
+
+@media (max-width:764px) {
+
+    /* Header */
+
+    header .search_header{
+        display: none;
+    }
+
+    header .icons_header{
+        margin-top: 5px;
+    }
+
+    header .icon_perfil{
+        margin-bottom: 3px;
+    }
+
+    .icons_header .icon_compass{
+        display: none;
+    }
+
+    /* Main */
+
+    /* Section 01 - Perfil */
+
+    main .perfil_section{
+        display: none;
+    }
+
+    main .content_info_mobile{
+        display: block;
+    }
+
+    main .perfil_section_mobile{
+        display: block;
+    }
+    /* Section 03 - Navegação */
+
+    .nav_single{
+    width: 33.3%;
+    }
+
+
+    /* Ajuste de tamanho das imagens das Seções 04, 05 e 06 */
+
+    .marcados_section .marcados_single{
+        padding-top: 200px;
+    }
+
+    .salvos_section .salvos_single{
+        padding-top: 200px;
+    }
+
+    .publicacoes_section .publicacoes_single{
+        padding-top: 200px;
+    }
+    
+}
+
+@media (max-width: 1000px){
+    .biografia_section .next{
+        right: 10px;
+        /* border: 1px solid red; */
+    }
+    
+    .biografia_section .prev{
+        /* border: 1px solid red; */
+        left: 10px;
+    }
+}
+
+@media (max-width: 580px){
+    .biografia_section .next{
+        right: 0px;
+        /* border: 1px solid red; */
+    }
+    
+    .biografia_section .prev{
+        /* border: 1px solid red; */
+        left: 0px;
+    }
+}
